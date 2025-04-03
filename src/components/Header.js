@@ -20,19 +20,26 @@ const Header = () => {
           Invest in $PAPO Token and fuel innovative startups and education in
           Web3.
         </p>
-        <Button
-          size="large"
-          shape="round"
-          style={{
-            border: "1px solid #fff",
-            background: "transparent",
-            color: "white",
-            fontWeight: "700",
-            padding: "25px",
-          }}
+        <a
+          href="https://forms.gle/bsVUvLWwUby5cD2t9"
+          target="_blank"
+          noreferrer
+          noreopener
         >
-          Apply for Funding
-        </Button>
+          <Button
+            size="large"
+            shape="round"
+            style={{
+              border: "1px solid #fff",
+              background: "transparent",
+              color: "white",
+              fontWeight: "700",
+              padding: "25px",
+            }}
+          >
+            Apply for Funding
+          </Button>
+        </a>
       </div>
     </header>
   );

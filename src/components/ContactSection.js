@@ -20,11 +20,15 @@ const ContactSection = () => {
     <div style={sectionstyle} id="contact">
       <section className="contact-section">
         <h2 style={textStyle}>Contact</h2>
-        <form className="contact-form">
-          <input type="email" placeholder="Email" />
-          {/* <textarea placeholder="Message"></textarea> */}
-          <button type="submit">Send Message</button>
-        </form>
+
+        <a
+          href="https://forms.gle/bsVUvLWwUby5cD2t9"
+          target="_blank"
+          noreferrer
+          noreopener
+        >
+          <button>Send Message</button>
+        </a>
       </section>
       <section className="social-section">
         <h2 style={{ fontSize: "2rem" }}>Social Media Links</h2>
@@ -32,7 +36,7 @@ const ContactSection = () => {
           Follow us on social media for the latest updates and community
           discussions.
         </p>
-        <p style={{ marginTop: "20px" }}>Email: info@$PAPOtoken.com</p>
+        <p style={{ marginTop: "20px" }}>Email: info@papoproject.com</p>
         <div
           style={{
             display: "flex",
@@ -55,7 +59,7 @@ const ContactSection = () => {
             <FaGlobe size={25} />
           </a>
           <a
-            href="mailto:info@papotoken.com"
+            href="mailto:info@papoproject.com.com"
             target="_blank"
             noreferrer
             noreopener
