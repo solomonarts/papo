@@ -27,7 +27,7 @@ const TokenAddress = () => {
   const contextValue = useMemo(() => ({ name: "Ant Design" }), []);
 
   // Replace with actual Solana token address
-  const tokenAddress = "5v9g...hH3T9u"; // Full address should be used
+  const tokenAddress = "8GmEFUFqP1X2n7wCMj1cv6FzDAvoihjbe1fg3k3nckqV"; // Full address should be used
 
   const [copied, setCopied] = useState(false);
 
@@ -43,7 +43,7 @@ const TokenAddress = () => {
       <div className="token-address">
         <h2>Solana Token Address</h2>
         <div className="address-box">
-          <span>longrandomsolanaaddress123...</span>
+          <span>8GmEFUFqP1X2n7wCMj1cv6FzDAvoihjbe1fg3k3nckqV</span>
           <FaCopy className="copy-icon" onClick={copyToClipboard} />
         </div>
       </div>
