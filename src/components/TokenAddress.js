@@ -18,7 +18,9 @@ const TokenAddress = () => {
       message: `Notification`,
       description: (
         <Context.Consumer>
-          {({ name }) => `Address Coppied to Clipboard`}
+          {({ name }) =>
+            `Address 8GmEFUFqP1X2n7wCMj1cv6FzDAvoihjbe1fg3k3nckqV Coppied to Clipboard`
+          }
         </Context.Consumer>
       ),
       placement,
