@@ -118,7 +118,6 @@
     margin-bottom: 2px;
   }
 
-  // Tablet view (medium screens)
   @media (max-width: 1024px) {
     height: 350px;
 
@@ -136,7 +135,6 @@
     }
   }
 
-  // Mobile view (small screens)
   @media (max-width: 768px) {
     height: 300px;
 
@@ -263,14 +261,12 @@
     color: #6a0dad;
   }
 
-  // Tablet view (medium screens)
   @media (max-width: 1024px) {
     > h2 {
       font-size: 2rem;
     }
   }
 
-  // Mobile view (small screens)
   @media (max-width: 768px) {
     > h2 {
       font-size: 2rem;
@@ -319,7 +315,6 @@
   -ms-border-radius: 20px 20px 0 0;
   -o-border-radius: 20px 20px 0 0;
 
-  // Tablet view (medium screens)
   @media (max-width: 1024px) {
     h2 {
       font-size: 2rem;
@@ -332,7 +327,6 @@
     }
   }
 
-  // Mobile view (small screens)
   @media (max-width: 768px) {
     h2 {
       font-size: 2rem;
@@ -473,14 +467,12 @@
     }
   }
 
-  // Tablet view (medium screens)
   @media (max-width: 1024px) {
     > h2 {
       font-size: 2rem;
     }
   }
 
-  // Mobile view (small screens)
   @media (max-width: 768px) {
     > h2 {
       font-size: 2rem;
@@ -623,7 +615,6 @@ button {
   }
 }
 
-// Tablet view (medium screens)
 @media (max-width: 1024px) {
   .token-distribution {
     img {
@@ -635,7 +626,6 @@ button {
   }
 }
 
-// Mobile view (small screens)
 @media (max-width: 768px) {
   .token-distribution {
     img {
