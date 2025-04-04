@@ -43,7 +43,7 @@ const TokenAddress = () => {
       <div className="token-address">
         <h2>Solana Token Address</h2>
         <div className="address-box">
-          <span>8GmEFUFqP1X2n7wCMj1cv6FzDAvoihjbe1fg3k3nckqV</span>
+          <span>8GmEFUFqP1X2n7wCMj1cv...</span>
           <FaCopy className="copy-icon" onClick={copyToClipboard} />
         </div>
       </div>
