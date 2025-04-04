@@ -41,7 +41,7 @@ const TokenAddress = () => {
     <Context.Provider value={contextValue}>
       {contextHolder}
       <div className="token-address">
-        <h2 style={textStyle}>Solana Token Address</h2>
+        <h2>Solana Token Address</h2>
         <div className="address-box">
           <span>longrandomsolanaaddress123...</span>
           <FaCopy className="copy-icon" onClick={copyToClipboard} />

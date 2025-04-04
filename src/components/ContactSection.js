@@ -1,3 +1,4 @@
+import { Button } from "antd";
 import React from "react";
 import { FaGlobe, FaInstagram, FaLinkedin, FaMailBulk } from "react-icons/fa";
 import { FaInbox, FaXTwitter } from "react-icons/fa6";
@@ -19,7 +20,7 @@ const ContactSection = () => {
   return (
     <div style={sectionstyle} id="contact">
       <section className="contact-section">
-        <h2 style={textStyle}>Contact</h2>
+        <h2 style={textStyle}></h2>
 
         <a
           href="https://forms.gle/bsVUvLWwUby5cD2t9"
@@ -27,7 +28,19 @@ const ContactSection = () => {
           noreferrer
           noreopener
         >
-          <button>Send Message</button>
+          <Button
+            size="large"
+            shape="round"
+            style={{
+              border: "1px solid #6a0dad",
+              background: "transparent",
+              color: "#6a0dad",
+              fontWeight: "700",
+              padding: "25px",
+            }}
+          >
+            Apply For Funding
+          </Button>
         </a>
       </section>
       <section className="social-section">
@@ -47,10 +60,15 @@ const ContactSection = () => {
           }}
         >
           {" "}
-          <a href="https://www.x.com" target="_blank" noreferrer noreopener>
+          <a
+            href="https://www.x.com/DouglasLwangaUg"
+            target="_blank"
+            noreferrer
+            noreopener
+          >
             <FaXTwitter size={25} />
           </a>
-          <a
+          {/* <a
             href="https://www.papoproject.com"
             target="_blank"
             noreferrer
@@ -65,7 +83,7 @@ const ContactSection = () => {
             noreopener
           >
             <FaInbox size={25} />
-          </a>
+          </a> */}
         </div>
       </section>
     </div>

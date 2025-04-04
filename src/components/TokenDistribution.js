@@ -11,14 +11,14 @@ const TokenDistribution = () => {
   return (
     <section className="token-distribution" id="how-it-works">
       <h2
-        style={{
-          color: "white",
-          textAlign: "center",
-          fontSize: "4rem",
-          fontWeight: "900",
-          padding: "20px 0",
-          textShadow: "18px 22px 1px #ffffff38",
-        }}
+      // style={{
+      //   color: "white",
+      //   textAlign: "center",
+      //   fontSize: "4rem",
+      //   fontWeight: "900",
+      //   padding: "20px 0",
+      //   textShadow: "18px 22px 1px #ffffff38",
+      // }}
       >
         Tokenomics
       </h2>

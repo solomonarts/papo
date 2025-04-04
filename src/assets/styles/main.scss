@@ -33,6 +33,10 @@
     list-style: none;
     gap: 20px;
 
+    @media (max-width: 768px) {
+      display: none;
+    }
+
     li {
       position: relative;
 
@@ -114,13 +118,56 @@
     margin-bottom: 2px;
   }
 
+  // Tablet view (medium screens)
+  @media (max-width: 1024px) {
+    height: 350px;
+
+    .overlay {
+      padding: 15px;
+      max-width: 90%;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  // Mobile view (small screens)
   @media (max-width: 768px) {
+    height: 300px;
+
+    .overlay {
+      padding: 10px;
+      max-width: 95%;
+    }
+
     h1 {
       font-size: 2rem;
     }
 
     p {
       font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    height: 500px;
+
+    .overlay {
+      padding: 8px;
+      max-width: 90%;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 0.9rem;
     }
   }
 }
@@ -193,11 +240,11 @@
   -moz-border-radius: 0 0 20px 20px;
   -ms-border-radius: 0 0 20px 20px;
   -o-border-radius: 0 0 20px 20px;
-  > p {
-    font-size: 2rem;
+  > h2 {
+    font-size: 3rem;
     font-weight: 900;
-    text-align: center;
-    padding: 0 10px;
+    text-shadow: 18px 22px 1px rgba(0, 0, 0, 0.2);
+    padding: 30px;
   }
 
   .address-box {
@@ -215,11 +262,31 @@
     cursor: pointer;
     color: #6a0dad;
   }
+
+  // Tablet view (medium screens)
+  @media (max-width: 1024px) {
+    > h2 {
+      font-size: 2rem;
+    }
+  }
+
+  // Mobile view (small screens)
+  @media (max-width: 768px) {
+    > h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    > h2 {
+      font-size: 2rem;
+    }
+  }
 }
 
 .mission {
-  padding: 40px 60px;
-  min-height: 70vh;
+  padding: 40px 200px;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -231,17 +298,68 @@
 
   h2 {
     color: #6a0dad;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: left;
+    text-shadow: 18px 22px 1px rgba(0, 0, 0, 0.2);
   }
 
   p {
-    font-size: 18px;
     color: #333;
+    text-align: left;
+    padding-left: 80px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 4px;
   }
+
   border-radius: 20px 20px 0 0;
   -webkit-border-radius: 20px 20px 0 0;
   -moz-border-radius: 20px 20px 0 0;
   -ms-border-radius: 20px 20px 0 0;
   -o-border-radius: 20px 20px 0 0;
+
+  // Tablet view (medium screens)
+  @media (max-width: 1024px) {
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+
+  // Mobile view (small screens)
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.3rem;
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px;
+
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 0.5rem;
+      text-align: center;
+      padding-left: 0;
+    }
+  }
 }
 
 .token-distribution {
@@ -257,9 +375,30 @@
   -moz-border-radius: 0 0 20px 20px;
   -ms-border-radius: 0 0 20px 20px;
   -o-border-radius: 0 0 20px 20px;
+
+  h2 {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    padding: 20px 0;
+    text-shadow: 18px 22px 1px #ffffff38;
+  }
+
   img {
     height: auto;
-    width: 40%;
+    width: 60%;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+    img {
+      height: auto;
+      width: 100%;
+    }
+    h2 {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -286,8 +425,10 @@
 
 .timeline-container {
   text-align: left;
+  min-height: 30vh;
   margin: 20px auto auto 0;
-  padding: 20px;
+  padding: 0 60px;
+  justify-items: center;
   background-color: #000;
   border-radius: 20px 20px 0 0;
   -webkit-border-radius: 20px 20px 0 0;
@@ -303,6 +444,9 @@
     @media (min-width: 1024px) {
       grid-template-columns: 1fr 1fr;
     }
+    @media (max-width: 480px) {
+      padding: 0;
+    }
   }
 
   .grid-item {
@@ -313,6 +457,34 @@
     justify-content: center;
     align-items: center;
     color: white;
+
+    @media (max-width: 480px) {
+      padding: 0;
+      &.item-1 {
+        img {
+          width: 100%;
+        }
+      }
+      &.item-2 {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // Tablet view (medium screens)
+  @media (max-width: 1024px) {
+    > h2 {
+      font-size: 2rem;
+    }
+  }
+
+  // Mobile view (small screens)
+  @media (max-width: 768px) {
+    > h2 {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -320,6 +492,21 @@
   background: #000;
   padding: 50px;
   color: #fff;
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    text-shadow: 18px 22px 1px #ffffff38;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+    h2 {
+      font-size: 3rem;
+    }
+  }
 }
 
 .faq-item {
@@ -372,4 +559,91 @@ button {
   padding: 2rem;
   border-radius: 8px;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .mission {
+    padding: 40px;
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.3rem;
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mission {
+    padding: 20px;
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.3rem;
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid-item {
+    &.item-1 {
+      > img {
+        width: 100%;
+      }
+    }
+    &.item-2 {
+      > img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-item {
+    &.item-1 {
+      > img {
+        width: 70%;
+      }
+    }
+    &.item-2 {
+      > img {
+        width: 70%;
+      }
+    }
+  }
+}
+
+// Tablet view (medium screens)
+@media (max-width: 1024px) {
+  .token-distribution {
+    img {
+      height: auto;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}
+
+// Mobile view (small screens)
+@media (max-width: 768px) {
+  .token-distribution {
+    img {
+      width: 50px;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
 }

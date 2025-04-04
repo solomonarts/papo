@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import $PAPOlogo from "../assets/images/papologo.png";
+import papologo from "../assets/images/papologo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,7 +26,7 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
         <div className="logo">
-          <img src={$PAPOlogo} className="nav-logo" alt="Logo" />
+          <img src={papologo} className="nav-logo" alt="Logo" />
           $PAPO
         </div>
 

@@ -10,30 +10,30 @@ const Mission = () => {
 
   return (
     <section className="mission" id="about">
-      <h2 style={textStyle}>Our Focus:</h2>
+      <h2>Our Focus:</h2>
       <p
-        style={{
-          textAlign: "left",
-          paddingLeft: "80px",
-          fontSize: "1.3rem",
-          fontWeight: "500",
-          marginTop: "4px",
-        }}
+      // style={{
+      //   textAlign: "left",
+      //   paddingLeft: "80px",
+      //   fontSize: "1.3rem",
+      //   fontWeight: "500",
+      //   marginTop: "4px",
+      // }}
       >
         $PAPO Token is designed to drive sustainable economic growth across
         Africa by providing crucial funding for startups, small businesses, and
         educational projects focused on Web3 technology. Join us in building a
         decentralized future where innovation leads to opportunity for all.
       </p>
-      <h2 style={textStyle}>The Problem and Solution:</h2>
+      <h2>The Problem and Solution:</h2>
       <p
-        style={{
-          textAlign: "left",
-          paddingLeft: "80px",
-          fontSize: "1.3rem",
-          fontWeight: "500",
-          marginTop: "4px",
-        }}
+      // style={{
+      //   textAlign: "left",
+      //   paddingLeft: "80px",
+      //   fontSize: "1.3rem",
+      //   fontWeight: "500",
+      //   marginTop: "4px",
+      // }}
       >
         Despite its vast potential, Africa’s growth is hindered by a significant
         resource gap. $PAPO Token addresses this by facilitating accessible,

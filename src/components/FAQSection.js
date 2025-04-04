@@ -34,7 +34,7 @@ const FAQSection = () => {
 
   return (
     <section className="faq-section" id="faq">
-      <h2 style={textStyle}>FAQ</h2>
+      <h2>FAQ</h2>
       {faqs.map((faq, index) => (
         <div key={index} className="faq-item" onClick={() => toggleFAQ(index)}>
           <h3>{faq.question}</h3>
