@@ -2,16 +2,13 @@ import React from "react";
 import { Button } from "antd";
 import klaimage from "../assets/images/kampalacity.png";
 
-const Header = () => {
+const Header = ({ openDock }) => {
   return (
     <header
       className="header"
       id="home"
       style={{
         backgroundImage: `url(${klaimage})`,
-        backgroundAttachment: "fixed",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
       }}
     >
       <div className="overlay">
@@ -41,6 +38,21 @@ const Header = () => {
           </Button>
         </a>
       </div>
+      <p className="disclaimer">
+        {" "}
+        $PAPO tokens are designed for support and engagement with startups and
+        educational initiatives within the blockchain space only. Holding $PAPO
+        tokens symbolizes support for entrepreneurial growth and innovation, but
+        does not constitute an investment or a security of any kind. There are
+        no guarantees provided on returns or outcomes; participation is solely
+        to support and engage with startup projects. Read{" "}
+        <span
+          onClick={() => openDock("terms")}
+          style={{ color: "#9ed263", cursor: "pointer" }}
+        >
+          Terms and Conditions here.
+        </span>
+      </p>
     </header>
   );
 };

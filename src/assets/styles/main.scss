@@ -87,10 +87,16 @@
 
 .header {
   position: relative;
-  background: no-repeat center;
+  background: #00000073;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  min-height: 700px;
   display: flex;
+  flex-direction: column;
+  gap: 10px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -100,11 +106,30 @@
   -ms-border-radius: 20px 20px 0 0;
   -o-border-radius: 20px 20px 0 0;
 
+  .disclaimer {
+    font-size: 16px;
+    color: #fff;
+    max-width: 70%;
+    font-weight: 400;
+    line-height: 1.5;
+
+    @media (max-width: 768px) {
+      max-width: 80%;
+    }
+
+    @media (max-width: 480px) {
+      max-width: 95%;
+    }
+  }
+
   .overlay {
     background: rgba(106, 13, 173, 0.7);
     padding: 20px;
     border-radius: 10px;
     color: white;
+    @media (max-width: 480px) {
+      margin-top: 120px;
+    }
   }
 
   h1 {
@@ -137,6 +162,7 @@
 
   @media (max-width: 768px) {
     height: 300px;
+    margin-top: 30px;
 
     .overlay {
       padding: 10px;
@@ -153,7 +179,8 @@
   }
 
   @media (max-width: 480px) {
-    height: 500px;
+    height: 800px;
+    margin-top: 10px;
 
     .overlay {
       padding: 8px;
@@ -172,7 +199,7 @@
 
 .nav-links-mobile {
   list-style: none;
-  padding: 0;
+  padding: 30px 0 0 0;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -184,7 +211,7 @@
 }
 
 .nav-links-mobile li a {
-  color: #000;
+  color: #2f034f;
   text-decoration: none;
   font-size: 18px;
 }
@@ -200,7 +227,7 @@
 .hamburger .bar {
   width: 25px;
   height: 3px;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .mobile-menu {
@@ -485,7 +512,7 @@
 
 .faq-section {
   background: #000;
-  padding: 50px;
+  padding: 0 80px;
   color: #fff;
 
   h2 {
@@ -632,7 +659,7 @@ button {
 @media (max-width: 768px) {
   .token-distribution {
     h2 {
-      font-size: 1rem;
+      font-size: 3rem;
     }
   }
 }

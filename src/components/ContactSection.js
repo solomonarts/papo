@@ -3,7 +3,7 @@ import React from "react";
 import { FaGlobe, FaInstagram, FaLinkedin, FaMailBulk } from "react-icons/fa";
 import { FaInbox, FaXTwitter } from "react-icons/fa6";
 
-const ContactSection = () => {
+const ContactSection = ({ openDock }) => {
   const sectionstyle = {
     boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.2)",
     borderRadius: "0 0 20px 20px",
@@ -85,6 +85,19 @@ const ContactSection = () => {
             <FaInbox size={25} />
           </a> */}
         </div>
+        <span
+          onClick={() => openDock("terms")}
+          style={{
+            color: "#6a0dad",
+            cursor: "pointer",
+            fontWeight: "600",
+            fontSize: "18px",
+            textDecoration: "underline",
+            textDecorationStyle: "double",
+          }}
+        >
+          Terms and Conditions here.
+        </span>
       </section>
     </div>
   );

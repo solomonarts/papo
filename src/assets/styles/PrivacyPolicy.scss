@@ -1,0 +1,62 @@
+.privacy-policy-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+
+  h3 {
+    font-weight: 700;
+  }
+}
+
+.privacy-policy-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.privacy-policy-dock {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 45%;
+  background: white;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 1100;
+  padding: 20px;
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.privacy-policy-button {
+  padding: 10px 20px;
+  background-color: #9ed263;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}

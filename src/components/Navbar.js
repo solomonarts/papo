@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import papologo from "../assets/images/papologo.png";
+import { MdOutlineClose } from "react-icons/md";
 
 const Navbar = () => {
+  const menuRef = useRef(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // state for mobile menu
 
@@ -22,6 +24,24 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen); // toggle the menu state
   };
 
+  // Function to close menu if clicking outside
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsMobileMenuOpen(false);
+    }
+  };
+
+  // Attach event listener when menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isMobileMenuOpen]);
+
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
@@ -38,25 +58,43 @@ const Navbar = () => {
         </div>
 
         {/* Mobile menu */}
-        <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
+        <div
+          ref={menuRef}
+          className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}
+        >
+          <button className="close-button" onClick={toggleMobileMenu}>
+            <MdOutlineClose />
+          </button>
           <ul className="nav-links-mobile">
             <li>
-              <a href="#home">Home</a>
+              <a onClick={toggleMobileMenu} href="#home">
+                Home
+              </a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a onClick={toggleMobileMenu} href="#about">
+                About
+              </a>
             </li>
             <li>
-              <a href="#how-it-works">How It Works</a>
+              <a onClick={toggleMobileMenu} href="#how-it-works">
+                How It Works
+              </a>
             </li>
             <li>
-              <a href="#apply">Apply for Funding</a>
+              <a onClick={toggleMobileMenu} href="#apply">
+                Apply for Funding
+              </a>
             </li>
             <li>
-              <a href="#faq">FAQ</a>
+              <a onClick={toggleMobileMenu} href="#faq">
+                FAQ
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a onClick={toggleMobileMenu} href="#contact">
+                Contact
+              </a>
             </li>
           </ul>
         </div>
