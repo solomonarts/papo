@@ -421,7 +421,6 @@
   text-align: left;
   min-height: 30vh;
   margin: 20px auto auto 0;
-  padding: 0 60px;
   justify-items: center;
   background-color: #000;
   border-radius: 20px 20px 0 0;
@@ -465,6 +464,10 @@
         }
       }
     }
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 70px;
   }
 
   @media (max-width: 1024px) {
@@ -628,10 +631,6 @@ button {
 
 @media (max-width: 768px) {
   .token-distribution {
-    img {
-      width: 50px;
-    }
-
     h2 {
       font-size: 1rem;
     }
