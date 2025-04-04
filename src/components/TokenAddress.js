@@ -17,11 +17,7 @@ const TokenAddress = () => {
     api.info({
       message: `Notification`,
       description: (
-        <Context.Consumer>
-          {({ name }) =>
-            `Address 8GmEFUFqP1X2n7wCMj1cv6FzDAvoihjbe1fg3k3nckqV Coppied to Clipboard`
-          }
-        </Context.Consumer>
+        <Context.Consumer>{({ name }) => `Coming Soon...`}</Context.Consumer>
       ),
       placement,
     });
@@ -29,7 +25,7 @@ const TokenAddress = () => {
   const contextValue = useMemo(() => ({ name: "Ant Design" }), []);
 
   // Replace with actual Solana token address
-  const tokenAddress = "8GmEFUFqP1X2n7wCMj1cv6FzDAvoihjbe1fg3k3nckqV"; // Full address should be used
+  const tokenAddress = "Coming Soon..."; // Full address should be used
 
   const [copied, setCopied] = useState(false);
 
@@ -45,7 +41,7 @@ const TokenAddress = () => {
       <div className="token-address">
         <h2>Solana Token Address</h2>
         <div className="address-box">
-          <span>8GmEFUFqP1X2n7wCMj1cv...</span>
+          <span>Coming Soon..</span>
           <FaCopy className="copy-icon" onClick={copyToClipboard} />
         </div>
       </div>
