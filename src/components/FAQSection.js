@@ -24,7 +24,7 @@ const FAQSection = () => {
     {
       question:
         "What is the official contract address and symbol for the PAPO Token?",
-      answer: "$PAPO - Coming soon",
+      answer: "$PAPO - 8ArZ7K5EfSfEBpMpZyNGK8py1vY1dWRemNcM4Ndtudrw",
     },
     {
       question: "How can I get $PAPO?",
